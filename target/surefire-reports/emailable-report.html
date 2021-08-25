@@ -9,16 +9,107 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,272</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">17</td><td class="num">0</td><td class="num attn">3</td><td class="num">776,970</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runner.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1629428067540</td><td rowspan="1">828</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">runner.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="3">1629883845986</td><td rowspan="3">64584</td></tr><tr class="failedeven"><td><a href="#m1">feature</a></td></tr><tr class="failedeven"><td><a href="#m2">feature</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="17">runner.TestRunner</td><td><a href="#m3">feature</a></td><td rowspan="17">1629883695880</td><td rowspan="17">55635</td></tr><tr class="passedeven"><td><a href="#m4">feature</a></td></tr><tr class="passedeven"><td><a href="#m5">feature</a></td></tr><tr class="passedeven"><td><a href="#m6">feature</a></td></tr><tr class="passedeven"><td><a href="#m7">feature</a></td></tr><tr class="passedeven"><td><a href="#m8">feature</a></td></tr><tr class="passedeven"><td><a href="#m9">feature</a></td></tr><tr class="passedeven"><td><a href="#m10">feature</a></td></tr><tr class="passedeven"><td><a href="#m11">feature</a></td></tr><tr class="passedeven"><td><a href="#m12">feature</a></td></tr><tr class="passedeven"><td><a href="#m13">feature</a></td></tr><tr class="passedeven"><td><a href="#m14">feature</a></td></tr><tr class="passedeven"><td><a href="#m15">feature</a></td></tr><tr class="passedeven"><td><a href="#m16">feature</a></td></tr><tr class="passedeven"><td><a href="#m17">feature</a></td></tr><tr class="passedeven"><td><a href="#m18">feature</a></td></tr><tr class="passedeven"><td><a href="#m19">feature</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Tag Feature</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+<h2>Test</h2><h3 id="m0">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Project details Feature</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/u/pooja18lh/org/pooja18lh/projects&quot; class=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (40, 170). Other element would receive the click: &lt;div data-v-29283772=&quot;&quot; class=&quot;el-dialog__wrapper&quot; name=&quot;scan-setting-modal&quot; height=&quot;auto&quot; pivoty=&quot;0.2&quot; style=&quot;z-index: 2001;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.NullPointerException
-	at stepDef.TagStepDef.click_on_tag_setting(TagStepDef.java:31)
-	at ✽.When Click on tag setting(src/test/java/features/21_Tag.feature:15)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/u/pooja18lh/org/pooja18lh/projects&quot; class=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (40, 170). Other element would receive the click: &lt;div data-v-29283772=&quot;&quot; class=&quot;el-dialog__wrapper&quot; name=&quot;scan-setting-modal&quot; height=&quot;auto&quot; pivoty=&quot;0.2&quot; style=&quot;z-index: 2001;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.ProjectStepDef.click_on_project_menu(ProjectStepDef.java:61)
+	at ✽.When Click on project menu(src/test/java/features/05_ProjectDetails.feature:14)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Vulnerbility Scan Result Feature</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt; is not clickable at point (40, 290). Other element would receive the click: &lt;div class=&quot;el-loading-spinner&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt; is not clickable at point (40, 290). Other element would receive the click: &lt;div class=&quot;el-loading-spinner&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.VulnerabiltyStepDef.click_on_vulnerability_menu(VulnerabiltyStepDef.java:39)
+	at ✽.When Click on vulnerability menu(src/test/java/features/09_VulnerabilityScanResult.feature:14)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Vulnerbility Feature</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div data-v-55432318=&quot;&quot;&gt;...&lt;/div&gt; is not clickable at point (1178, 306). Other element would receive the click: &lt;th colspan=&quot;1&quot; rowspan=&quot;1&quot; class=&quot;el-table_4_column_28  is-center   is-leaf&quot;&gt;...&lt;/th&gt;
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div data-v-55432318=&quot;&quot;&gt;...&lt;/div&gt; is not clickable at point (1178, 306). Other element would receive the click: &lt;th colspan=&quot;1&quot; rowspan=&quot;1&quot; class=&quot;el-table_4_column_28  is-center   is-leaf&quot;&gt;...&lt;/th&gt;
+  (Session info: chrome=92.0.4515.159)
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.VulnerabiltyStepDef.click_on_Generate_and_download_pdf_vulnerability_report(VulnerabiltyStepDef.java:266)
+	at ✽.And click on Generate and download pdf vulnerability report(src/test/java/features/08_Vulnerability.feature:37)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Dashboard Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Member invitation Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>General setting organization Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Teams Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Login Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Knowledge Graph Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Apply Policy Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Create Policy Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Tag Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Compliance Result Policy Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Register Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Componenent Scan Result Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>access token Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>CompliancePolicy Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Componenent Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Project Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">runner.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Integration Feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

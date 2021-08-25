@@ -8,7 +8,7 @@ Feature: Componenent Feature
 #    Then redirecting on dashboard page    
 #    Examples: 
 #    |username                     |password       |
-#    |scantist3                    |Ssunrise1!     |
+#    |pooja18lh                    |Ssunrise1!     |
     
     Scenario: Verify the component page
 	When Click on component menu

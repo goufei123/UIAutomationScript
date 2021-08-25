@@ -11,11 +11,11 @@ Feature: Tag Feature
 #    |username                     |password       |
 #    |pooja18lh                    |Ssunrise1!     |
     
-    Scenario: Verify the tag tab
-	When Click on tag setting 
-	Then validate the tag setting page
-	When Enter the tag "testTag"
-	Then Validate the tag
+#    Scenario: Verify the tag tab
+#	When Click on tag setting 
+#	Then validate the tag setting page
+#	When Enter the tag "testTag"
+#	Then Validate the tag
 #	When Enter the tag "testTag"
 #	Then Validate the duplicate tag	
 #	When Modify the tag

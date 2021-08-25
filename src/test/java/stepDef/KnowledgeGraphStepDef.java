@@ -29,8 +29,8 @@ public class KnowledgeGraphStepDef {
 
 	@When("^Click on knowledge graph menu$")
 	public void click_on_knowledge_graph_menu() throws Throwable {
-		new WebDriverWait(driver, 1000).until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/u/pooja18lh/org/pooja18lh/knowledge-graph']")));
-	    driver.findElement(By.xpath("/u/pooja18lh/org/pooja18lh/knowledge-graph")).click();
+		new WebDriverWait(driver, 1000).until(ExpectedConditions.elementToBeClickable(By.xpath("//a/i[@class='fab fa-connectdevelop']")));
+	    driver.findElement(By.xpath("//a/i[@class='fab fa-connectdevelop']")).click();
 	}
 
 	@Then("^Validate the knowledge graph page$")

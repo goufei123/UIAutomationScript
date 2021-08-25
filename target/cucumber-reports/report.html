@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 20, 2021 10:54:27 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 25, 2021 05:27:09 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,7 +73,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -87,6 +88,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@selenium</a></li>
 					<li><a href='#'>@selenium1</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -135,10 +137,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='85%'><span class='strong'>17</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='15%'>3</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -150,10 +152,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='95.283%'><span class='strong'>101</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>5</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='4.717%'>5</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -165,10 +167,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.774%'><span class='strong'>270</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='38.462%'>5</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='61.538%'>8</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.792%'>5</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='1.434%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -182,80 +184,815 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Tag Feature</span>
-						<span class='test-time'>Aug 20, 2021 10:54:27 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Register Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:27:09 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 0s+338ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 13s+721ms</span>
 	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify the tag tab</span>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the email field with invalid email id</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node when fail' status='fail'>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@selenium</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the email field with invalid email id</span>
+			
+				<ul class='steps'>
+					<li test-id='4' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the invalid email id "axyz@.com"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='5' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then display error message for invalid email id</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='6' status='pass'>
+	<span class='duration right label'>0h 0m 2s+321ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the blank email id field</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='7' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When Click on tag setting</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at stepDef.TagStepDef.click_on_tag_setting(TagStepDef.java:31)
-	at ?.When Click on tag setting(src/test/java/features/21_Tag.feature:15)
-</pre></div>
+			<span class="bdd-step-name">When enter the blank email id " "</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node then skip' status='skip'>
+		<li test-id='8' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then validate the tag setting page</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-		<li test-id='5' class='node when skip' status='skip'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When Enter the tag "testTag"</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-		<li test-id='6' class='node then skip' status='skip'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Validate the tag</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then display error message for blank email id field</span>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='7' status='fail'>
-	<span class='duration right label'>0h 0m 0s+22ms</span>
+<div class='scenariooutline node' test-id='9' status='pass'>
+	<span class='duration right label'>0h 0m 1s+350ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the password field for entering less than 8 character</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='10' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the password field for entering less than 8 character</span>
+			
+				<ul class='steps'>
+					<li test-id='11' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the password with less than eight character "Ssun"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then display error message for short password</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='13' status='pass'>
+	<span class='duration right label'>0h 0m 1s+265ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the blank password field</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='14' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the blank password " "</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then display error message for blank password field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='16' status='pass'>
+	<span class='duration right label'>0h 0m 21s+132ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the create account</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='17' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the create account</span>
+			
+				<ul class='steps'>
+					<li test-id='18' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When Open yopmail in new tab and copy mail paste in email field</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='19' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the email and password "Ssunrise1!"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And click on By signing up, I agree to Scantist's Terms and Conditions.</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And click on create account and click on terms and condition link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then display message for successfully account created</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>Login Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:27:49 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='24' status='pass'>
+	<span class='duration right label'>0h 0m 12s+847ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the login with valid credentials</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='25' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@selenium</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the login with valid credentials</span>
+			
+				<ul class='steps'>
+					<li test-id='26' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on Home page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the username "pooja18lh" and password "Ssunrise1!"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then redirecting on dashboard page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then logout the user account</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='30' status='pass'>
+	<span class='duration right label'>0h 0m 4s+841ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the login with invalid username and valid password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='31' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the login with invalid username and valid password</span>
+			
+				<ul class='steps'>
+					<li test-id='32' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the invalid username "scantist3@.com" and valid password "Ssunrise1!"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='33' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then display error message for invalid credentials</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='34' status='pass'>
+	<span class='duration right label'>0h 0m 3s+40ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the login with valid username and invalid password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='35' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the login with valid username and invalid password</span>
+			
+				<ul class='steps'>
+					<li test-id='36' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the valid username "scantist3@gmail.com" and invalid password "Ssunrise"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='37' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then display error message for invalid credentials</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='38' status='pass'>
+	<span class='duration right label'>0h 0m 2s+966ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the login with invalid username and invalid password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='39' class='node scenario pass' status='pass'>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the login with invalid username and invalid password</span>
+			
+				<ul class='steps'>
+					<li test-id='40' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the invalid username "scantist3gmail.com" and invalid password "Ssunrise"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='41' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then display error message for invalid credentials</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='42' status='pass'>
+	<span class='duration right label'>0h 0m 2s+707ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify with blank email address and password</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='43' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Do not enter email address and password</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='44' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on signin button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='45' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then display validation error for email and password</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>Dashboard Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:28:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='47' status='pass'>
+	<span class='duration right label'>0h 0m 9s+286ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the login with valid credentials</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='48' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@selenium</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the login with valid credentials</span>
+			
+				<ul class='steps'>
+					<li test-id='49' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on Home page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='50' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the username "pooja18lh" and password "Ssunrise1!"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='51' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then redirecting on dashboard page</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='52' status='pass'>
+	<span class='duration right label'>0h 0m 25s+279ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the slidebar menu</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='53' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on button to close slidebar menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='54' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on button to open menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='55' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the open menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='56' status='pass'>
+	<span class='duration right label'>0h 0m 0s+139ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the username of user</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='57' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the username of user</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='58' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the username</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='59' status='pass'>
+	<span class='duration right label'>0h 0m 0s+163ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the component of account</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='60' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the component of account</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='61' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the total component</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='62' status='pass'>
+	<span class='duration right label'>0h 0m 0s+166ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='63' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the total count of vulnerability</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='64' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the total count of vulnerability</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='65' status='pass'>
+	<span class='duration right label'>0h 0m 0s+177ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the compliance</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='66' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the total count of compliance</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='67' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the total count of compliance</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='68' status='pass'>
+	<span class='duration right label'>0h 0m 20s+297ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the project with risk table</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='69' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the project with risk information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='70' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the project with risk information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='71' status='pass'>
+	<span class='duration right label'>0h 0m 0s+103ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the risk over the time graph</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='72' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the risk over the time information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='73' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the risk over the time information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='74'>
+					<div class='test-heading'>
+						<span class='test-name'>Project Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:29:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='75' status='pass'>
+	<span class='duration right label'>0h 0m 2s+801ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify the Project page</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='8' class='node when fail' status='fail'>
+		<li test-id='76' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When Click on project menu</span>
-				<div class='pre'><textarea>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:72)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:46)
-	at stepDef.ProjectStepDef.click_on_project_menu(ProjectStepDef.java:60)
-	at ?.When Click on project menu(src/test/java/features/21_Tag.feature:29)
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='77' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Project page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='78' status='pass'>
+	<span class='duration right label'>0h 0m 0s+810ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the overview section</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='79' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the overview section information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='80' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the overview section</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='81' status='pass'>
+	<span class='duration right label'>0h 0m 14s+756ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the add project</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='82' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on add project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='83' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Add project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='84' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the added project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='85' status='pass'>
+	<span class='duration right label'>0h 0m 13s+219ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the add project</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='86' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Add project "jfinal"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='87' status='pass'>
+	<span class='duration right label'>0h 0m 13s+462ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the add project</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='88' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Add project "example-python"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='89' status='pass'>
+	<span class='duration right label'>0h 0m 49s+405ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the source scan</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='90' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on project menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='91' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Project page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='92' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the source project name "example-rubygems-circle" and hit enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='93' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the project details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='94' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on scan button to scan source code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='95' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And wait until the scan completion of source code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='96' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the source project name "jfinal" and hit enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='97' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on scan button to scan source code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='98' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And wait until the scan completion of source code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='99' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the source project name "example-python" and hit enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='100' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on scan button to scan source code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='101'>
+					<div class='test-heading'>
+						<span class='test-name'>Project details Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:30:45 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='102' status='fail'>
+	<span class='duration right label'>0h 0m 1s+318ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Project page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='103' class='node when fail' status='fail'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on project menu</span>
+				<div class='pre'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/u/pooja18lh/org/pooja18lh/projects" class="">...</a> is not clickable at point (40, 170). Other element would receive the click: <div data-v-29283772="" class="el-dialog__wrapper" name="scan-setting-modal" height="auto" pivoty="0.2" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.ProjectStepDef.click_on_project_menu(ProjectStepDef.java:61)
+	at ?.When Click on project menu(src/test/java/features/05_ProjectDetails.feature:14)
 </textarea></div>
 			
 		</li>
-		<li test-id='9' class='node then skip' status='skip'>
+		<li test-id='104' class='node then skip' status='skip'>
 			
 			<b>Then</b>
 			
@@ -265,97 +1002,2691 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='fail'>
-	<span class='duration right label'>0h 0m 0s+5ms</span>
+<div class='scenario node' test-id='105' status='fail'>
+	<span class='duration right label'>0h 0m 25s+907ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the source scan</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='106' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given clear the project name from serach box</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='107' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the source project name "example-rubygems-circle" and hit enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='108' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on project to go project details page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='109' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate project details page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='110' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Add tag to project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='111' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Add tag to project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='112' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Action button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='113' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on the scan button</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[5]/div/div[2]/div/div[1]/div/form/div[5]/div/div/div[1]/span/span/i"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+*** Element info: {Using=xpath, value=/html/body/div[1]/div[5]/div/div[2]/div/div[1]/div/form/div[5]/div/div/div[1]/span/span/i}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDef.ProjectDetailsStepDef.click_on_the_scan_button(ProjectDetailsStepDef.java:148)
+	at ?.And Click on the scan button(src/test/java/features/05_ProjectDetails.feature:25)
+</pre></div>
+			
+		</li>
+		<li test-id='114' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the scan started</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='115' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the scan completed</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='116' status='fail'>
+	<span class='duration right label'>0h 0m 1s+276ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the scan setting</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='117' class='node when fail' status='fail'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on scheduled scan of source code</span>
+				<div class='pre'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="el-checkbox__inner"></span> is not clickable at point (607, 218). Other element would receive the click: <div class="el-form-item__content" style="margin-left: 120px;">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.ProjectDetailsStepDef.click_on_scheduled_scan_of_source_code(ProjectDetailsStepDef.java:242)
+	at ?.When Click on scheduled scan of source code(src/test/java/features/05_ProjectDetails.feature:30)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='118' status='pass'>
+	<span class='duration right label'>0h 0m 22s+360ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the scan history</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='119' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Select the current scan</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='120' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on rescan</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='121' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the scan completed</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='122' status='pass'>
+	<span class='duration right label'>0h 0m 13s+703ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Compare feature</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='123' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on compare button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='124' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the compare page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='125'>
+					<div class='test-heading'>
+						<span class='test-name'>Componenent Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:31:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='126' status='pass'>
+	<span class='duration right label'>0h 0m 2s+754ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the component page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='127' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on component menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='128' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the component page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='129' status='pass'>
+	<span class='duration right label'>0h 0m 0s+630ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the component statistics page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='130' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get component statistics menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='131' status='pass'>
+	<span class='duration right label'>0h 0m 0s+220ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component Vulnerability page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='132' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get Component Vulnerability menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='133' status='pass'>
+	<span class='duration right label'>0h 0m 0s+112ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component Licenses page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='134' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get Component Licenses menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='135' status='pass'>
+	<span class='duration right label'>0h 0m 10s+940ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component list with project details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='136' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When search for project "example-rubygems-circle" to view component details of project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='137' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And get the project details & click on view button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='138' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then redirect on component scan result page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='139' status='pass'>
+	<span class='duration right label'>0h 0m 15s+765ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component list with download report</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='140' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When search for project "example-rubygems-circle" to view component details of project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='141' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And get the project details & click on action button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='142' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Generate and download pdf report</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='143' status='pass'>
+	<span class='duration right label'>0h 0m 10s+172ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the download report with csv format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='144' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on download csv report</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='145' status='pass'>
+	<span class='duration right label'>0h 0m 10s+321ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the download report with xml format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='146' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on download xml report</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='147' status='pass'>
+	<span class='duration right label'>0h 0m 9s+191ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the download report with json format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='148' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on download json report</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='149' status='pass'>
+	<span class='duration right label'>0h 0m 24s+998ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component list with by component tab</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='150' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When select the tab and search for project "sinatra"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='151' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And get the project details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='152' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Project button and scan result button and view button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='153' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the project page and scan result page and individual component page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='154'>
+					<div class='test-heading'>
+						<span class='test-name'>Componenent Scan Result Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:33:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='155' status='pass'>
+	<span class='duration right label'>0h 0m 2s+691ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the component page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='156' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on component menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='157' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the component page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='158' status='pass'>
+	<span class='duration right label'>0h 0m 8s+658ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component list with project details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='159' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When search for project "example-rubygems-circle" in searchbox</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='160' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And get the project details & click on view button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='161' status='pass'>
+	<span class='duration right label'>0h 0m 1s+504ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the component statistics</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='162' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get component statistics information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='163' status='pass'>
+	<span class='duration right label'>0h 0m 0s+271ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component Vulnerability</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='164' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get Component Vulnerability information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='165' status='pass'>
+	<span class='duration right label'>0h 0m 0s+289ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Component Licenses</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='166' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get Component Licenses information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='167' status='pass'>
+	<span class='duration right label'>0h 0m 0s+270ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Cloned Files Analysis</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='168' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get Cloned Files Analysis information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='169' status='pass'>
+	<span class='duration right label'>0h 0m 3s+67ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the dependency graph with information</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='170' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get dependency graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='171' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the dependency graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='172' status='pass'>
+	<span class='duration right label'>0h 0m 7s+833ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the list of component</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='173' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When search for component "sinatra" and enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='174' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And get the component detail</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='175' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on vulnerability fiter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='176' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on download button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='177' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And download pdf version</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='178' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And download csv version</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='179' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And download xml version</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='180' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And download json version</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='181' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on view button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='182' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then redirect on individual component details page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='183' status='pass'>
+	<span class='duration right label'>0h 0m 11s+482ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the component with information</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='184' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get component information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='185' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the information of vulnerability of that component</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='186' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate version history</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='187' status='pass'>
+	<span class='duration right label'>0h 0m 0s+420ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the License of details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='188' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the Allowed License Attribute</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='189' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Allowed License Attribute</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='190' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the Required License Attribute</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='191' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Required License Attribute</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='192' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the Restricted License Attribute</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='193' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Restricted License Attribute</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='194'>
+					<div class='test-heading'>
+						<span class='test-name'>Vulnerbility Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:33:52 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='195' status='pass'>
+	<span class='duration right label'>0h 0m 4s+533ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='196' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on vulnerability menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='197' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the vulnerability page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='198' status='pass'>
+	<span class='duration right label'>0h 0m 0s+384ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='199' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the overall section</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='200' status='pass'>
+	<span class='duration right label'>0h 0m 1s+241ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='201' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the security warning section</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='202' status='pass'>
+	<span class='duration right label'>0h 0m 0s+234ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='203' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the security bug section</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='204' status='pass'>
+	<span class='duration right label'>0h 0m 0s+531ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='205' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the cve section</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='206' status='pass'>
+	<span class='duration right label'>0h 0m 6s+529ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability list with project details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='207' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When search for project "example-python" to view vulnerbaility details of project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='208' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And get the project details & click on view button of vulnerbaility project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='209' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then redirect on vulnerability scan result page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='210' status='fail'>
+	<span class='duration right label'>0h 0m 19s+234ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability list with download report</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='211' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When search for project "example-python" to view vulnerability details of project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='212' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Get the project details & click on action button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='213' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Generate and download pdf vulnerability report</span>
+				<div class='pre'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-55432318="">...</div> is not clickable at point (1178, 306). Other element would receive the click: <th colspan="1" rowspan="1" class="el-table_4_column_28  is-center   is-leaf">...</th>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.VulnerabiltyStepDef.click_on_Generate_and_download_pdf_vulnerability_report(VulnerabiltyStepDef.java:266)
+	at ?.And click on Generate and download pdf vulnerability report(src/test/java/features/08_Vulnerability.feature:37)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='214' status='pass'>
+	<span class='duration right label'>0h 0m 7s+352ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the download report with csv format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='215' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on download csv vulnerability report</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='216' status='pass'>
+	<span class='duration right label'>0h 0m 7s+200ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the download report with xml format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='217' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on download xml vulnerability report</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='218' status='pass'>
+	<span class='duration right label'>0h 0m 7s+263ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the download report with json format</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='219' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on download json vulnerability report</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='220'>
+					<div class='test-heading'>
+						<span class='test-name'>Vulnerbility Scan Result Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:34:46 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='221' status='fail'>
+	<span class='duration right label'>0h 0m 1s+280ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='222' class='node when fail' status='fail'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on vulnerability menu</span>
+				<div class='pre'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fas fa-exclamation-triangle"></i> is not clickable at point (40, 290). Other element would receive the click: <div class="el-loading-spinner">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.VulnerabiltyStepDef.click_on_vulnerability_menu(VulnerabiltyStepDef.java:39)
+	at ?.When Click on vulnerability menu(src/test/java/features/09_VulnerabilityScanResult.feature:14)
+</textarea></div>
+			
+		</li>
+		<li test-id='223' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the vulnerability page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='224' status='pass'>
+	<span class='duration right label'>0h 0m 8s+865ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability list with project details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='225' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When search for project "jfinal" to view vulnerbaility details of project</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='226' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And get the project details & click on view button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='227' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the vulnerability scan result page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='228' status='pass'>
+	<span class='duration right label'>0h 0m 0s+491ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability scan result page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='229' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the overall section of vulernability scan result page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='230' status='pass'>
+	<span class='duration right label'>0h 0m 1s+611ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability scan result page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='231' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the security warning section of vulernability scan result page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='232' status='pass'>
+	<span class='duration right label'>0h 0m 0s+482ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability scan result page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='233' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the security bug section of vulernability scan result page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='234' status='pass'>
+	<span class='duration right label'>0h 0m 0s+551ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the vulnerability scan result page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='235' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When get and validate the cve section of vulernability scan result page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='236' status='pass'>
+	<span class='duration right label'>0h 0m 13s+564ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Vulernability list</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='237' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on ALL tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='238' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Displaying all vulernabilities</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='239' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on CVE tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='240' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Displaying all CVE's</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='241' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on BUG tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='242' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Displaying all Security Bug</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='243' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on WRN tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='244' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Displaying all Security Warning</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='245' status='pass'>
+	<span class='duration right label'>0h 0m 2s+381ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Vulernability list</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='246' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on ALL tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='247' status='pass'>
+	<span class='duration right label'>0h 0m 11s+115ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the supress the vulnerability</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='248' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on supress to supress the vulnerbaility</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='249' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the issue supression</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='250' status='pass'>
+	<span class='duration right label'>0h 0m 2s+520ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the unsupress the vulnerability</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='251' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on unsupress to unsupress the vulnerbaility</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='252' status='pass'>
+	<span class='duration right label'>0h 0m 10s+286ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the fix issues</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='253' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on the fix issues</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='254' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on the component which vulnerabilities group want to create pull request and create bulk pull request</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='255' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the pull request created</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='256' status='pass'>
+	<span class='duration right label'>0h 0m 43s+594ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Vulnerability Details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='257' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on view button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='258' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the CVE information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='259' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then add the issue action information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='260' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on action</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='261' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then supress the issue</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='262' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on action</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='263' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then unsupress the issue</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='264' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on action</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='265' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then create github github issue</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='266' status='pass'>
+	<span class='duration right label'>0h 0m 3s+446ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the hyperlinks</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='267' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When validate the hyperlink</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='268' status='pass'>
+	<span class='duration right label'>0h 0m 1s+79ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the remediation</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='269' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When validate remediation information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='270' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Create pull request</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='271'>
+					<div class='test-heading'>
+						<span class='test-name'>Knowledge Graph Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:36:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='272' status='pass'>
+	<span class='duration right label'>0h 0m 6s+306ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='273' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on knowledge graph menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='274' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the knowledge graph page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='275' status='pass'>
+	<span class='duration right label'>0h 0m 19s+338ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='276' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='277' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Knowledge graph is displaying</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='278' status='pass'>
+	<span class='duration right label'>0h 0m 4s+971ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph page Most Vulnerable Projects</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='279' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search knowledge graph Most Vulnerable Projects</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='280' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='281' status='pass'>
+	<span class='duration right label'>0h 0m 4s+931ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph page Critical Projects</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='282' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search knowledge graph Critical Projects Projects</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='283' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='284' status='pass'>
+	<span class='duration right label'>0h 0m 8s+501ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph page Most Common CVEs projects</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='285' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search knowledge graph Most Common CVEs Projects</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='286' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='287' status='pass'>
+	<span class='duration right label'>0h 0m 4s+801ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph page Less Maintained Projects</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='288' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search knowledge graph Less Maintained Projects</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='289' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='290' status='pass'>
+	<span class='duration right label'>0h 0m 18s+677ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph with advanced search</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='291' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search for projects in advanced search</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='292' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='293' status='pass'>
+	<span class='duration right label'>0h 0m 8s+179ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph with advanced search</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='294' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search for vulnerability in advanced search</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='295' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='296' status='pass'>
+	<span class='duration right label'>0h 0m 9s+680ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph with advanced search</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='297' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search for Licenses in advanced search</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='298' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='299' status='pass'>
+	<span class='duration right label'>0h 0m 8s+345ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph with advanced search</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='300' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search for component in advanced search</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='301' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='302' status='pass'>
+	<span class='duration right label'>0h 0m 8s+688ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the knowledge graph with advanced search</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='303' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Search for customs in advanced search</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='304' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get the knowledge graph information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='305'>
+					<div class='test-heading'>
+						<span class='test-name'>Create Policy Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:38:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='306' status='pass'>
+	<span class='duration right label'>0h 0m 9s+248ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify the login with valid credentials</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='307' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@selenium</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify the login with valid credentials</span>
+			
+				<ul class='steps'>
+					<li test-id='308' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on Home page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='309' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When enter the username "pooja18lh" and password "Ssunrise1!"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='310' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then redirecting on dashboard page</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='311' status='pass'>
+	<span class='duration right label'>0h 0m 1s+10ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Organization tab</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='312' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Organization menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='313' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the organization tab opened</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='314' status='pass'>
+	<span class='duration right label'>0h 0m 1s+242ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the duplicate policy</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='315' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Enter policy name "testPolicy8"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='316' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on Create Policy</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='317' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the duplicate policy</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='318' status='pass'>
+	<span class='duration right label'>0h 0m 5s+177ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Create policy</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='319' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Enter policy name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='320' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on Create Policy</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='321' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Displaying organization policy information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='322' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on new policy to assign rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='323'>
+					<div class='test-heading'>
+						<span class='test-name'>Apply Policy Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:38:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='324' status='pass'>
+	<span class='duration right label'>0h 0m 0s+180ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the policy details page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='325' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the policy details page information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='326' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Get the policy name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='327' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the policy name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='328' status='pass'>
+	<span class='duration right label'>0h 0m 6s+998ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the add rule from Denied category</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='329' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Denied Add rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='330' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Create the rule with single attribute for Component</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='331' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the created rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='332' status='pass'>
+	<span class='duration right label'>0h 0m 4s+647ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the add rule from Flagged category</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='333' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Flagged Add rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='334' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Create the rule with single attribute for Component with flagged policy rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='335' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the created rule with flagged policy rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='336' status='pass'>
+	<span class='duration right label'>0h 0m 4s+717ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the add rule from Approved category</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='337' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Approved Add rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='338' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Create the rule with single attribute for Component with Approved policy rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='339' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the created rule with Approved policy rule</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='340' status='pass'>
+	<span class='duration right label'>0h 0m 2s+617ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Project page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='341' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on project menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='342' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Project page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='343' status='pass'>
+	<span class='duration right label'>0h 0m 16s+818ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the source scan</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='344' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the source project name "example-rubygems-circle" and hit enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='345' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the project details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='346' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When click on scan button to scan source code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='347' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And wait until the scan completion of source code</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='348' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the scan result</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='349'>
+					<div class='test-heading'>
+						<span class='test-name'>CompliancePolicy Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='350' status='pass'>
+	<span class='duration right label'>0h 0m 4s+589ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the CompliancePolicy page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='351' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on CompliancePolicy menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='352' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the CompliancePolicy page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='353' status='pass'>
+	<span class='duration right label'>0h 0m 7s+92ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Compliance policy details</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='354' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the project name "example-rubygems-circle" and hit enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='355' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the compliance policy details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='356' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on result button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='357' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the project name "example-rubygems-circle" and hit enter</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='358' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Clcik on view button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='359'>
+					<div class='test-heading'>
+						<span class='test-name'>Compliance Result Policy Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='360' status='pass'>
+	<span class='duration right label'>0h 0m 3s+782ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Compliance Result Policy page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='361' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Get the Compliance Result Policy details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='362' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Compliance Result Policy details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='363'>
+					<div class='test-heading'>
+						<span class='test-name'>General setting organization Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='364' status='pass'>
+	<span class='duration right label'>0h 0m 3s+759ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the general organization setting</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='365' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on organization setting</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='366' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the general setting page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='367' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on description to update the organization information</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='368' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click to update button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='369'>
+					<div class='test-heading'>
+						<span class='test-name'>Teams Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='370' status='pass'>
+	<span class='duration right label'>0h 0m 2s+949ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the team setting tab</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='371' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on team setting</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='372' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the team setting page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='373' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click the "testTeam" team name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='374' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on create team button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='375' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Delete the team</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='376'>
+					<div class='test-heading'>
+						<span class='test-name'>Member invitation Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='377' status='pass'>
+	<span class='duration right label'>0h 0m 2s+573ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the member invitation tab</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='378' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on member setting</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='379' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the member setting page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='380' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the "scantist4@gmail.com" member name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='381' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on invite member button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='382'>
+					<div class='test-heading'>
+						<span class='test-name'>access token Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='383' status='pass'>
+	<span class='duration right label'>0h 0m 3s+518ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the access token tab</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='384' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on access token setting</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='385' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the access token setting page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='386' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Enter the access token "QWERTYUI"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='387' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the access token</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='388' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Enter the access token "QWERTYUI"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='389' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the duplicate access token</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='390' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Delete the access token</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='391' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the delete token</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='392' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter empty token</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='393' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the validation error for blank field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='394' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When enter the invalid token "as#$%"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='395' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the valiation error for invalid token</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='396'>
+					<div class='test-heading'>
+						<span class='test-name'>Integration Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='397' status='pass'>
+	<span class='duration right label'>0h 0m 0s+759ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Jira integrations</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='398' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on integration setting</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='399' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the integration setting page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='400' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Validate the status of jira</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='401'>
+					<div class='test-heading'>
+						<span class='test-name'>Tag Feature</span>
+						<span class='test-time'>Aug 25, 2021 05:39:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='402' status='pass'>
+	<span class='duration right label'>0h 0m 2s+554ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify the Project page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='403' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on project menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='404' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then validate the Project page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='405' status='pass'>
+	<span class='duration right label'>0h 0m 10s+222ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify the remove project</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='11' class='node when fail' status='fail'>
+		<li test-id='406' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When Click on add project</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at stepDef.ProjectStepDef.click_on_add_project(ProjectStepDef.java:738)
-	at ?.When Click on add project(src/test/java/features/21_Tag.feature:33)
-</pre></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='12' class='node when skip' status='skip'>
+		<li test-id='407' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When remove project "pooja18lh1/example-rubygems-circle"</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='13' class='node then skip' status='skip'>
+		<li test-id='408' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then Validate the removed project</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='14' status='fail'>
-	<span class='duration right label'>0h 0m 0s+9ms</span>
+<div class='scenario node' test-id='409' status='pass'>
+	<span class='duration right label'>0h 0m 9s+231ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify the remove project</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='15' class='node when fail' status='fail'>
+		<li test-id='410' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When remove project "pooja18lh1/jfinal"</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at stepDef.TagStepDef.remove_project(TagStepDef.java:162)
-	at ?.When remove project "pooja18lh1/jfinal"(src/test/java/features/21_Tag.feature:38)
-</pre></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='16' class='node then skip' status='skip'>
+		<li test-id='411' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then Validate the removed project</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='17' status='fail'>
+<div class='scenario node' test-id='412' status='pass'>
 	<div class='category-list'>
 		<span class='category label white-text'>@selenium1</span>
 	</div>
-	<span class='duration right label'>0h 0m 0s+13ms</span>
+	<span class='duration right label'>0h 0m 9s+392ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify the remove project</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='18' class='node when fail' status='fail'>
+		<li test-id='413' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When remove project "pooja18lh1/example-python"</span>
-				<div class='pre'><pre>java.lang.NullPointerException
-	at stepDef.TagStepDef.remove_project(TagStepDef.java:162)
-	at ?.When remove project "pooja18lh1/example-python"(src/test/java/features/21_Tag.feature:43)
-</pre></div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='19' class='node then skip' status='skip'>
+		<li test-id='414' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then Validate the removed project</span>
-				<div class='pre'>skipped</div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -414,15 +3745,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@selenium1</span>
+						<span class='category-name'>@selenium</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -437,9 +3768,58 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 20, 2021 10:54:28 AM</td>
-										<td class='linked' test-id='17'>Tag Feature.Verify the remove project</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Aug 25, 2021 05:27:09 PM</td>
+										<td class='linked' test-id='3'>Register Feature.Verify the email field with invalid email id.Verify the email field with invalid email id</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 25, 2021 05:27:49 PM</td>
+										<td class='linked' test-id='25'>Login Feature.Verify the login with valid credentials.Verify the login with valid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 25, 2021 05:28:15 PM</td>
+										<td class='linked' test-id='48'>Dashboard Feature.Verify the login with valid credentials.Verify the login with valid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 25, 2021 05:38:10 PM</td>
+										<td class='linked' test-id='307'>Create Policy Feature.Verify the login with valid credentials.Verify the login with valid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@selenium1</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 25, 2021 05:39:54 PM</td>
+										<td class='linked' test-id='412'>Tag Feature.Verify the remove project</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -485,8 +3865,8 @@
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.NullPointerException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>5</span></span>
+                                <span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -500,47 +3880,158 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 20, 2021 10:54:28 AM</td>
-                                                        <td class='linked' test-id='3'>Tag Feature.Verify the tag tab.When Click on tag setting</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at stepDef.TagStepDef.click_on_tag_setting(TagStepDef.java:31)
-	at ?.When Click on tag setting(src/test/java/features/21_Tag.feature:15)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Aug 20, 2021 10:54:28 AM</td>
-                                                        <td class='linked' test-id='8'>Tag Feature.Verify the Project page.When Click on project menu</td>
-                                                        <td><pre><textarea>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:72)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:46)
-	at stepDef.ProjectStepDef.click_on_project_menu(ProjectStepDef.java:60)
-	at ?.When Click on project menu(src/test/java/features/21_Tag.feature:29)
+                                                        <td>Aug 25, 2021 05:30:45 PM</td>
+                                                        <td class='linked' test-id='103'>Project details Feature.Verify the Project page.When Click on project menu</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/u/pooja18lh/org/pooja18lh/projects" class="">...</a> is not clickable at point (40, 170). Other element would receive the click: <div data-v-29283772="" class="el-dialog__wrapper" name="scan-setting-modal" height="auto" pivoty="0.2" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.ProjectStepDef.click_on_project_menu(ProjectStepDef.java:61)
+	at ?.When Click on project menu(src/test/java/features/05_ProjectDetails.feature:14)
 </textarea></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Aug 20, 2021 10:54:28 AM</td>
-                                                        <td class='linked' test-id='11'>Tag Feature.Verify the remove project.When Click on add project</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at stepDef.ProjectStepDef.click_on_add_project(ProjectStepDef.java:738)
-	at ?.When Click on add project(src/test/java/features/21_Tag.feature:33)
-</pre></pre></td>
+                                                        <td>Aug 25, 2021 05:31:13 PM</td>
+                                                        <td class='linked' test-id='117'>Project details Feature.Verify the scan setting.When Click on scheduled scan of source code</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="el-checkbox__inner"></span> is not clickable at point (607, 218). Other element would receive the click: <div class="el-form-item__content" style="margin-left: 120px;">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.ProjectDetailsStepDef.click_on_scheduled_scan_of_source_code(ProjectDetailsStepDef.java:242)
+	at ?.When Click on scheduled scan of source code(src/test/java/features/05_ProjectDetails.feature:30)
+</textarea></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Aug 20, 2021 10:54:28 AM</td>
-                                                        <td class='linked' test-id='15'>Tag Feature.Verify the remove project.When remove project "pooja18lh1/jfinal"</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at stepDef.TagStepDef.remove_project(TagStepDef.java:162)
-	at ?.When remove project "pooja18lh1/jfinal"(src/test/java/features/21_Tag.feature:38)
-</pre></pre></td>
+                                                        <td>Aug 25, 2021 05:34:10 PM</td>
+                                                        <td class='linked' test-id='213'>Vulnerbility Feature.Verify the vulnerability list with download report.And click on Generate and download pdf vulnerability report</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-55432318="">...</div> is not clickable at point (1178, 306). Other element would receive the click: <th colspan="1" rowspan="1" class="el-table_4_column_28  is-center   is-leaf">...</th>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.VulnerabiltyStepDef.click_on_Generate_and_download_pdf_vulnerability_report(VulnerabiltyStepDef.java:266)
+	at ?.And click on Generate and download pdf vulnerability report(src/test/java/features/08_Vulnerability.feature:37)
+</textarea></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Aug 20, 2021 10:54:28 AM</td>
-                                                        <td class='linked' test-id='18'>Tag Feature.Verify the remove project.When remove project "pooja18lh1/example-python"</td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at stepDef.TagStepDef.remove_project(TagStepDef.java:162)
-	at ?.When remove project "pooja18lh1/example-python"(src/test/java/features/21_Tag.feature:43)
+                                                        <td>Aug 25, 2021 05:34:46 PM</td>
+                                                        <td class='linked' test-id='222'>Vulnerbility Scan Result Feature.Verify the vulnerability page.When Click on vulnerability menu</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fas fa-exclamation-triangle"></i> is not clickable at point (40, 290). Other element would receive the click: <div class="el-loading-spinner">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDef.VulnerabiltyStepDef.click_on_vulnerability_menu(VulnerabiltyStepDef.java:39)
+	at ?.When Click on vulnerability menu(src/test/java/features/09_VulnerabilityScanResult.feature:14)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Aug 25, 2021 05:30:57 PM</td>
+                                                        <td class='linked' test-id='113'>Project details Feature.Verify the source scan.And Click on the scan button</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[5]/div/div[2]/div/div[1]/div/form/div[5]/div/div/div[1]/span/span/i"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+*** Element info: {Using=xpath, value=/html/body/div[1]/div[5]/div/div[2]/div/div[1]/div/form/div[5]/div/div/div[1]/span/span/i}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDef.ProjectDetailsStepDef.click_on_the_scan_button(ProjectDetailsStepDef.java:148)
+	at ?.And Click on the scan button(src/test/java/features/05_ProjectDetails.feature:25)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -567,37 +4058,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>106</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>13</div>
+					<div class='panel-lead'>279</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 20, 2021 10:54:27 AM</div>
+					<div class='panel-lead'>Aug 25, 2021 05:27:09 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 20, 2021 10:54:28 AM</div>
+			 		<div class='panel-lead'>Aug 25, 2021 05:40:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>709ms</div>
+					<div class='panel-lead'>775,154ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -613,12 +4104,21 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@selenium1</td>
+							<td>@selenium</td>
+							<td>4</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@selenium1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -634,15 +4134,15 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 17,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 3,
 				
-				passChild: 0,
+				passChild: 101,
 				failChild: 5,
 				fatalChild: 0,
 				errorChild: 0,
@@ -651,14 +4151,14 @@
 				infoChild: 0,
 				exceptionsChild: 5,
 				
-				passGrandChild: 0,
+				passGrandChild: 270,
 				failGrandChild: 5,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 8,
+				skipGrandChild: 4,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 13,
+				exceptionsGrandChild: 9,
 			};
 		</script>
 		

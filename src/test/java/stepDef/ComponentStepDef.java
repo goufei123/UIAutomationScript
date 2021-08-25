@@ -189,11 +189,10 @@ public class ComponentStepDef {
 		driver.findElement(By.tagName("body")).sendKeys(Keys.PAGE_DOWN);
 		
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//p[normalize-space(text()='example-pip-travis-master')]/preceding::span[@class='el-checkbox__inner'][1])[1]")).click();
+		driver.findElement(By.xpath("(//p[normalize-space(text()='example-rubygems-circle')]/preceding::span[@class='el-checkbox__inner'][1])[1]")).click();
 
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
+		driver.findElement(By.xpath("//button/span[normalize-space()='Action']")).click();
 		Thread.sleep(1000);
 
 		WebElement button = driver.findElement(By.xpath("//ul/li[@class='el-dropdown-menu__item'][2]/div[1]"));
@@ -217,7 +216,7 @@ public class ComponentStepDef {
 						 }  
 						});  
 
-						WebElement actionButton = driver.findElement(By.xpath("(//button[@type='button'])[3]"));
+						WebElement actionButton = driver.findElement(By.xpath("//button/span[normalize-space()='Action']"));
 						//WebElement actionButton = driver.findElement(By.xpath("(//button[@type='button'])[2]"));
 						Actions act = new Actions(driver);
 						act.moveToElement(actionButton).build().perform();						
@@ -303,7 +302,7 @@ public class ComponentStepDef {
 	//	driver.findElement(By.tagName("body")).sendKeys(Keys.PAGE_DOWN);
 	//	driver.findElement(By.tagName("body")).sendKeys(Keys.PAGE_DOWN);
 
-		WebElement element= driver.findElement(By.xpath("(//button[@type='button'])[3]"));
+		WebElement element= driver.findElement(By.xpath("//button/span[normalize-space()='Action']"));
 		//WebElement element= driver.findElement(By.xpath("(//button[@type='button'])[2]"));
 		new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(element)).click();
 		Thread.sleep(1000);
@@ -360,7 +359,7 @@ public class ComponentStepDef {
 		driver.findElement(By.tagName("body")).sendKeys(Keys.PAGE_DOWN);
 		driver.findElement(By.tagName("body")).sendKeys(Keys.PAGE_DOWN);
         Thread.sleep(1000);
-		WebElement ele = driver.findElement(By.xpath("(//button[@type='button'])[3]"));
+		WebElement ele = driver.findElement(By.xpath("//button/span[normalize-space()='Action']"));
 		//WebElement ele = driver.findElement(By.xpath("(//button[@type='button'])[2]"));
 		ele.click();
 		Thread.sleep(1000);
@@ -402,7 +401,7 @@ public class ComponentStepDef {
 		WebDriverWait wait = new  WebDriverWait(driver, 3000);
 	//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='button'])[3]")));
 		
-		WebElement ele = driver.findElement(By.xpath("(//button[@type='button'])[3]"));
+		WebElement ele = driver.findElement(By.xpath("//button/span[normalize-space()='Action']"));
 		//WebElement ele = driver.findElement(By.xpath("(//button[@type='button'])[2]"));
 		ele.click();
 		Thread.sleep(1000);

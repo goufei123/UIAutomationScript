@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="3.552" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="778.287" tests="20" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_251\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Pooja\Workspace2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3452555866712066995.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Pooja\Workspace2\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8638885666230384639.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_251/bin/server;C:/Program Files/Java/jre1.8.0_251/bin;C:/Program Files/Java/jre1.8.0_251/lib/amd64;C:\Python27\;%PYTHON%;C:\Python39\;%PYTHON%;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;&quot;%PYTHON_HOME%\;%PYTHON_HOME%\Scripts\&quot;;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Users\Pooja\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\;C:\Users\Pooja\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7\Scripts\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\apache-maven-3.6.3\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Ruby26-x64\bin;C:\Users\Pooja\AppData\Local\Microsoft\WindowsApps;;C:\Users\Pooja\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pooja\AppData\Roaming\npm;C:\Users\Pooja\AppData\Local\Yarn\bin;C:\Users\Pooja\eclipse\java-2020-03\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,9 +60,203 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="feature" classname="runner.TestRunner" time="0.847">
-    <failure message="java.lang.NullPointerException" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.NullPointerException
-Caused by: java.lang.NullPointerException
-</failure>
+  <testcase name="feature" classname="runner.TestRunner" time="40.109"/>
+  <testcase name="feature" classname="runner.TestRunner" time="26.4"/>
+  <testcase name="feature" classname="runner.TestRunner" time="55.636"/>
+  <testcase name="feature" classname="runner.TestRunner" time="94.47"/>
+  <testcase name="feature" classname="runner.TestRunner" time="64.622">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/u/pooja18lh/org/pooja18lh/projects&quot; class=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (40, 170). Other element would receive the click: &lt;div data-v-29283772=&quot;&quot; class=&quot;el-dialog__wrapper&quot; name=&quot;scan-setting-modal&quot; height=&quot;auto&quot; pivoty=&quot;0.2&quot; style=&quot;z-index: 2001;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=92.0.4515.159)&#10;Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;&#10;System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 214ce0b89279c1f227fd138056ea7ecc" type="cucumber.runtime.CucumberException"><![CDATA[cucumber.runtime.CucumberException: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/u/pooja18lh/org/pooja18lh/projects" class="">...</a> is not clickable at point (40, 170). Other element would receive the click: <div data-v-29283772="" class="el-dialog__wrapper" name="scan-setting-modal" height="auto" pivoty="0.2" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+Caused by: org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/u/pooja18lh/org/pooja18lh/projects" class="">...</a> is not clickable at point (40, 170). Other element would receive the click: <div data-v-29283772="" class="el-dialog__wrapper" name="scan-setting-modal" height="auto" pivoty="0.2" style="z-index: 2001;">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+]]></failure>
+    <system-out><![CDATA[
+Rescan started
+Current scan =>
+#27144
+master
+1 min ago
+00:04
+Source Code
+Default
+Web
+COMPLETED
+20
+26
+0
+Rescan
+]]></system-out>
   </testcase>
+  <testcase name="feature" classname="runner.TestRunner" time="85.118"/>
+  <testcase name="feature" classname="runner.TestRunner" time="36.505"/>
+  <testcase name="feature" classname="runner.TestRunner" time="54.525">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div data-v-55432318=&quot;&quot;&gt;...&lt;/div&gt; is not clickable at point (1178, 306). Other element would receive the click: &lt;th colspan=&quot;1&quot; rowspan=&quot;1&quot; class=&quot;el-table_4_column_28  is-center   is-leaf&quot;&gt;...&lt;/th&gt;&#10;  (Session info: chrome=92.0.4515.159)&#10;Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;&#10;System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 214ce0b89279c1f227fd138056ea7ecc" type="cucumber.runtime.CucumberException"><![CDATA[cucumber.runtime.CucumberException: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div data-v-55432318="">...</div> is not clickable at point (1178, 306). Other element would receive the click: <th colspan="1" rowspan="1" class="el-table_4_column_28  is-center   is-leaf">...</th>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+Caused by: org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div data-v-55432318="">...</div> is not clickable at point (1178, 306). Other element would receive the click: <th colspan="1" rowspan="1" class="el-table_4_column_28  is-center   is-leaf">...</th>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+]]></failure>
+    <system-out><![CDATA[
+IssueFoundValue :-167
+
+Issue Found :- No Issues Found
+
+IssueFoundValue :-12
+
+IssueFoundValue :-155
+
+*****Project Details*****
+example-python
+3
+12
+31
+0
+4
+3 mins ago
+View
+********************************************
+Vulnerability Results
+********************************************
+
+Project Details :-
+example-python
+3
+12
+31
+0
+4
+3 mins ago
+View
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="runner.TestRunner" time="101.297">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt; is not clickable at point (40, 290). Other element would receive the click: &lt;div class=&quot;el-loading-spinner&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=92.0.4515.159)&#10;Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;&#10;System info: host: &apos;DESKTOP-P004O12&apos;, ip: &apos;192.168.10.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 214ce0b89279c1f227fd138056ea7ecc" type="cucumber.runtime.CucumberException"><![CDATA[cucumber.runtime.CucumberException: 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fas fa-exclamation-triangle"></i> is not clickable at point (40, 290). Other element would receive the click: <div class="el-loading-spinner">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+Caused by: org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <i class="fas fa-exclamation-triangle"></i> is not clickable at point (40, 290). Other element would receive the click: <div class="el-loading-spinner">...</div>
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'DESKTOP-P004O12', ip: '192.168.10.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Pooja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 214ce0b89279c1f227fd138056ea7ecc
+]]></failure>
+    <system-out><![CDATA[
+*****Project Details*****
+jfinal
+29
+52
+10
+0
+0
+4 mins ago
+View
+
+IssueFound :-Issues Found: 91
+
+IssueFoundValue :-91
+Issue Found :- No Issues Found
+
+IssueFoundValue :-5
+
+IssueFoundValue :-86
+
+Displaying all vulnerabilities
+
+Displaying all CVE's
+
+Displaying all Security bugs
+
+Displaying all Warning's
+
+Vulnerabillity Details :-
+c3p0
+0.9.5.1
+Source Code
+CVE
+-
+7.5
+View
+
+Suppressed successfully
+Pull Request created successfully
+
+CVE Details ==>
+CVE-2019-5427
+c3p0 version < 0.9.5.4 may be exploited by a billion laughs attack when loading XML configuration due to missing protections against recursive entity expansion when loading configuration.
+HIGH
+7.5
+Vulnerability Type:
+CWE-776
+Security Vector:
+Attack Vector (AV): Network
+Attack Complexity (AC): Low
+Privileges Required: None
+User Interaction (UI): None
+Related Component:
+Not available at the moment
+
+This issue has been suppressed.
+
+This issue has been unsuppressed.
+
+Hyperlinks :-
+
+https://hackerone.com/reports/509315 ==> is a valid link
+
+https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BFIVX6HOVNLAM7W3SUAMHYRNLCVQSAWR/ ==> is a valid link
+
+https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MQ47OFV57Y2DAHMGA5H3JOL4WHRWRFN4/ ==> is a valid link
+
+https://www.oracle.com/security-alerts/cpuapr2020.html ==> is a valid link
+
+https://www.oracle.com/security-alerts/cpujan2021.html ==> is a valid link
+
+https://www.oracle.com/security-alerts/cpujul2020.html ==> is a valid link
+
+https://www.oracle.com/security-alerts/cpuoct2020.html ==> is a valid link
+
+Create pull request button is present
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="runner.TestRunner" time="102.44"/>
+  <testcase name="feature" classname="runner.TestRunner" time="16.686"/>
+  <testcase name="feature" classname="runner.TestRunner" time="35.989"/>
+  <testcase name="feature" classname="runner.TestRunner" time="11.685"/>
+  <testcase name="feature" classname="runner.TestRunner" time="3.785"/>
+  <testcase name="feature" classname="runner.TestRunner" time="3.761"/>
+  <testcase name="feature" classname="runner.TestRunner" time="2.953"/>
+  <testcase name="feature" classname="runner.TestRunner" time="2.576"/>
+  <testcase name="feature" classname="runner.TestRunner" time="3.52"/>
+  <testcase name="feature" classname="runner.TestRunner" time="0.76"/>
+  <testcase name="feature" classname="runner.TestRunner" time="32.449"/>
 </testsuite>
