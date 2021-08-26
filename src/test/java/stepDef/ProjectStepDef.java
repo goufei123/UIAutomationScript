@@ -315,9 +315,12 @@ public class ProjectStepDef {
 	public void click_on_scan_button_to_scan_source_code() throws Throwable {
 		new WebDriverWait(driver, 3000).until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@class='el-tooltip round-btn actionBtn item'])[1]")));
 		WebElement ele = driver.findElement(By.xpath("(//button[@class='el-tooltip round-btn actionBtn item'])[1]"));
+		try {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("arguments[0].click()", ele);
-		
+		}catch(StaleElementReferenceException e) {
+			Thread.sleep(1000);
+		}
 		String parentWindowHandler = driver.getWindowHandle();
 		String subWindowHandler = null;
 
@@ -331,6 +334,7 @@ public class ProjectStepDef {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@class='el-radio__inner'])[2]")));
 		driver.findElement(By.xpath("(//span[@class='el-radio__inner'])[2]")).click();
 		driver.findElement(By.xpath("//button/span[text()='Next']")).click();
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("(//i[@class='el-select__caret el-input__icon el-icon-arrow-up'])[4]")));
 		driver.findElement(By.xpath("(//i[@class='el-select__caret el-input__icon el-icon-arrow-up'])[4]")).click();
 		driver.findElement(By.xpath("//ul[@class='el-scrollbar__view el-select-dropdown__list']/li/span[text()='master']")).click();
 
@@ -786,9 +790,11 @@ public class ProjectStepDef {
 	@When("^Add project$")
 	public void add_project() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 3000);
-
+		try {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='search']"))).click();
-
+		}catch(StaleElementReferenceException e) {
+			Thread.sleep(1000);
+		}
 	    driver.findElement(By.xpath("//input[@type='search']")).sendKeys("pooja18lh1/example-rubygems-circle");
 		Thread.sleep(5000);
 	    driver.findElement(By.xpath("(//button[text()='Search'])[1]")).click();
